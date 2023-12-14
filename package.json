@@ -1,0 +1,20 @@
+{
+  "name": "mcque",
+  "version": "1.0.0",
+  "description": "Queue Service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Message Queue",
+    "Jobs",
+    "Scheduler"
+  ],
+  "author": "Yoni Widhi",
+  "license": "ISC",
+  "dependencies": {
+    "bullmq": "^3.10.0",
+    "redis": "^4.6.11"
+  }
+}
