@@ -1,11 +1,9 @@
 const McQueue = require('mcque');
 
-const QueueHelper = new McQueue.Queue();
-
-QueueHelper.dispatch('TestingJob', {
+McQueue.dispatch('TestingJob', {
     hello: 'world!'
 }).then(() => {
-    console.log('awokawok');
+    console.log('Job added successfully.');
 }).catch((err) => {
-    console.error('awikwok', err);
+    console.error('We found the errors:', err);
 });

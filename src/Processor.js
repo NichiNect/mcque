@@ -12,8 +12,6 @@ const BullQueue = new BullMQ.Queue(redisConfig?.queueName, {
     connection: redisConfig?.connection
 });
 
-console.log('confg', redisConfig?.connection);
-
 module.exports = async (job) => {
 
     console.log('job data', job?.data);
